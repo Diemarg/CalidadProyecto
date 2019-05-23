@@ -1,5 +1,7 @@
 const data = require("./DataBase");
+
 module.exports.login = function (username,passw) {
+
     if(typeof username == 'number'){
         let read = data.searchDataBase(username,passw);
         
@@ -13,9 +15,6 @@ module.exports.login = function (username,passw) {
 
 module.exports.register = function (people){
     let checking = (typeof(people.id)=='number' 
-    && typeof(people.name)=='string' 
-    && (typeof(people.lastname)=='string')
-    && (typeof(people.access)=='boolean')
     && (typeof(people.passw)=='string'));
 
     if(checking){
@@ -74,5 +73,3 @@ module.exports.searchEmploye = function (id) {
     }
     return "NOT FOUND";;
 }
-
-

@@ -3,7 +3,7 @@
 
     </head>
     <body>
-        <script type="text/javascript" src="backend/BackEnd.js"></script>
+        <script src="listener.js"></script>
         <div class="container">
           <div class="row">
             <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -22,14 +22,16 @@
                       <label for="inputPassword">Password</label>
                     </div>
       
-                    <button class="btn btn-lg btn-login btn-block text-uppercase" type="submit" onclick="BackEnd.login()" id="inputID">Login</button>
+                    <button type="button" id="loginbtn">Login</button>
                     
-                    <button class="btn btn-lg btn-sign-up btn-block text-uppercase" type="submit">Sign up</button>
+                    <button class="btn btn-lg btn-sign-up btn-block text-uppercase" type="button" id="signbtn">Sign up</button>
                   </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        
       </body>
 </html>
